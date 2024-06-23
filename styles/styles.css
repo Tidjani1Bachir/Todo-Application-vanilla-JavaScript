@@ -1,0 +1,118 @@
+body {
+  background-color: rgb(94, 9, 174);
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 450px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+form {
+  width: 400px;
+  height: 80px;
+  background-color: rgb(227, 227, 227);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  margin-bottom:40px;
+}
+
+input[type="text"] {
+  width: 280px;
+  height: 38px;
+  border-radius: 40px;
+  border: 1px solid gray;
+  margin-right: 10px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  padding: 0 10px;
+}
+
+input[type="submit"] {
+  height: 42px;
+  width: 80px;
+  border-radius: 40px;
+  border: 1px solid gray;
+  background-color: rgba(245, 73, 10);
+  color: white;
+  margin-left: -50px;
+  position: relative;
+  z-index: 11;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+input:focus {
+  outline: none;
+}
+.tasks {
+  width: 400px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-62.5%,200%);
+  -webkit-transform: translate(-62.5%,200%);
+  -moz-transform: translate(-62.5%,200%);
+  -ms-transform: translate(-62.5%,200%);
+  -o-transform: translate(-62.5%,200%);
+  margin-top: 20px;
+}
+.todo-icon {
+  color: #fab005;
+}
+.task.done {
+  color: #222;
+  text-decoration: line-through;
+}
+.task2.done {
+ position: relative;
+color: #fab005;
+
+}
+ .task2.done::before {
+ content: "\f00c";
+ display: block;
+ font-family: 'Font Awesome 5 Free';
+ font-weight: 900;
+ width:14px;
+ position: absolute;
+ top:50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ -webkit-transform: translate(-50%,-50%);
+ -moz-transform: translate(-50%,-50%);
+ -ms-transform: translate(-50%,-50%);
+ -o-transform: translate(-50%,-50%);
+}
+span.no-Text-decoration {
+text-decoration: none;
+}
+
