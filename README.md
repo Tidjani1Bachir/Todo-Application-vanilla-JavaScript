@@ -1,144 +1,95 @@
-<div align="center">
-  <br />
-        <a href="#" target="_blank">
-      <img src="https://github.com/Tidjani1Bachir/xora/blob/main/public/ui/Screenshot_2024-10-14_18_18_16.png" alt="UI Showcase">
-        </a>
-  <br />
+# ✅ Todo App with Local Storage
 
- 
+A simple, lightweight Todo List web application built with vanilla HTML, CSS, and JavaScript. Tasks are persisted in the browser's Local Storage so they survive page refreshes.
 
+---
 
+## 📁 Project Structure
 
-
-
-## <a name="introduction">🤖 Introduction</a>
-
-Xora is a Modern UI/UX SaaS website developed using React.js and Tailwind CSS that exemplifies modern UI/UX principles.
-Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or
-inspiration for future modern applications or websites in general.
-
-
-
-
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
-
-- Vite
-- React.js
-- Tailwind CSS
-
-## <a name="features">🔋 Features</a>
-
-👉 **Stunning Sections**: Includes hero, features, pricing (monthly/yearly), FAQ, testimonials, and download software
-sections.
-
-👉 **Smooth Animations**: Complex CSS for fluid animations and eye-catching effects.
-
-👉 **Cool CSS Gradients**: Beautiful gradient effects using CSS `before` and `after` pseudo-elements.
-
-👉 **Seamless Navigation**: Offers a smooth user experience with intuitive navigation and scrolling.
-
-👉 **Optimized Performance**: Built for fast loading and an optimized experience.
-
-👉 **Pixel Perfect Design**: Ensures flawless responsiveness across all devices and screen sizes.
-
-and many more, including code architecture and reusability
-
-## <a name="quick-start">⏰ Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-
-
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
-npm install
+```
+todo-app/
+├── imgs/
+│   ├── checked.png
+│   └── unchecked.png
+├── styles/
+│   ├── all.min.css       # Font Awesome icons
+│   ├── normalize.css     # CSS reset
+│   └── styles.css        # Main stylesheet
+├── webfonts/             # Font Awesome webfont files
+├── index.html            # App entry point
+├── main.js               # App logic
+└── README.md
 ```
 
-**Running the Project**
+---
+
+## 🚀 Getting Started
+
+No build tools or dependencies required. Just open the project in a browser:
 
 ```bash
-npm run dev
+# Clone or download the project, then open:
+open index.html
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
+Or serve it locally with any static server:
 
-**the UI Of The Application**
+```bash
+# Using Python
+python -m http.server 3000
 
-<a href="#" target="_blank">
-      <img src="https://github.com/Tidjani1Bachir/xora/blob/main/public/ui/Screenshot_2024-10-14_18_18_40.png" alt="UI Showcase">
-</a>
+# Using Node.js (npx)
+npx serve .
+```
 
-<br />
-<br />
-<br />
-<br />
+Then visit `http://localhost:3000` in your browser.
 
-<a href="#" target="_blank">
-      <img src="https://github.com/Tidjani1Bachir/xora/blob/main/public/ui/Screenshot_2024-10-14_18_18_55.png" alt="UI Showcase">
-</a>
+---
 
-<br />
-<br />
-<br />
-<br />
+## ✨ Features
 
-<a href="#" target="_blank">
-      <img src="https://github.com/Tidjani1Bachir/xora/blob/main/public/ui/Screenshot_2024-10-14_18_19_16.png" alt="UI Showcase">
-</a>
+- **Add tasks** — Type a task and click "Add Task" to add it to the list
+- **Complete tasks** — Click the orange checkbox to mark a task as done (strikethrough applied)
+- **Delete tasks** — Click the `x` button to remove a task
+- **Persistent storage** — All tasks are saved in `localStorage` and restored on page reload
 
-<br />
-<br />
+---
 
-<a href="#" target="_blank">
-      <img src="https://github.com/Tidjani1Bachir/xora/blob/main/public/ui/Screenshot_2024-10-14_18_19_29.png" alt="UI Showcase">
-</a>
+## 🛠️ Tech Stack
 
-<br />
-<br />
+| Technology | Purpose |
+|---|---|
+| HTML5 | Markup / structure |
+| CSS3 | Styling and layout |
+| Vanilla JavaScript | App logic and DOM manipulation |
+| localStorage API | Client-side data persistence |
+| Font Awesome | Icons (todo icon, checkmark) |
 
-<a href="#" target="_blank">
-      <img src="https://github.com/Tidjani1Bachir/xora/blob/main/public/ui/Screenshot_2024-10-14_18_19_49.png" alt="UI Showcase">
-</a>
+---
 
-<br />
-<br />
-<br />
-<br />
+## 🧠 How It Works
 
-<a href="#" target="_blank">
-      <img src="https://github.com/Tidjani1Bachir/xora/blob/main/public/ui/Screenshot_2024-10-14_18_20_19.png" alt="UI Showcase">
-</a>
+1. On page load, existing tasks are read from `localStorage` and rendered to the page.
+2. When the user adds a task, it is pushed to an in-memory array (`arrayOfTasks`) and saved to `localStorage`.
+3. Clicking a task's checkbox toggles its `completed` state and updates both the UI and `localStorage`.
+4. Clicking `x` removes the task from the array, the DOM, and `localStorage`.
 
-<br />
-<br />
+---
 
-<a href="#" target="_blank">
-      <img src="https://github.com/Tidjani1Bachir/xora/blob/main/public/ui/Screenshot_2024-10-14_18_20_32.png" alt="UI Showcase">
-</a>
+## 📸 Preview
 
-<br />
-<br />
-<br />
-<br />
+> Purple background with a centered white card containing the input form. Tasks appear below as white rows with a checkbox and delete button.
 
-<a href="#" target="_blank">
-      <img src="https://github.com/Tidjani1Bachir/xora/blob/main/public/ui/Screenshot_2024-10-14_18_30_39.png" alt="UI Showcase">
-</a>
+---
 
+## 📝 Notes
 
+- This project uses no frameworks or npm packages — pure vanilla JS.
+- The `all.min.css` and `webfonts/` folder are from [Font Awesome 6 Free](https://fontawesome.com/).
+- `normalize.css` is used to ensure consistent default styles across browsers.
 
+---
 
+## 📄 License
 
-
+This project is for personal/educational use. Feel free to fork and build on it.
